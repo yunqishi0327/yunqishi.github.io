@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 首页
+title: 文章列表
 ---
 
 # 我的文章概览
@@ -9,7 +9,7 @@ title: 首页
 {% for post in site.posts %}
 <li>
   <a href="{{ post.url }}">{{ post.title }}</a>
-  <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+  <small style="color: #666;">{{ post.date | date: "%Y-%m-%d" }}</small>
 </li>
 {% endfor %}
 </ul>
